@@ -1,0 +1,47 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Excalibur
+ */
+import java.util.Scanner;
+
+public class homework3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("A matrisinin satır sayısını girin:");
+        int n = input.nextInt();
+        int[][] A = new int[n][n];
+        int [] []B=new int [n][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.println("A matrisinin" + i + "  nci satırı ve" + j + " ninci sütununu girin:");
+                A[i][j]=input.nextInt();
+                if(i>j){
+                 B[i][j]=0;
+                }
+                else{
+                B[i][j]=A[i][j];
+                }
+
+            }
+        }
+        for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+        
+        System.out.println("yeni matrisimiz:"+B[i][j]);
+      
+       
+    }}
+    }
+
+}
